@@ -17,10 +17,7 @@ def errormessage(n=0):
         print('\033[31mError! Try to enter a valid real number!\033[m')
 
 
-# Functions for visual "effects"
-
-
-def formatar(phrase='frase formatada', n=0, show=True):
+def formatText(phrase='frase formatada', n=0, show=True):
     if n == 0:
         if show is True:
             print('=' * 40)
@@ -41,10 +38,35 @@ def formatar(phrase='frase formatada', n=0, show=True):
         return n
 
 
+def dynamicFormat(phrase='no phrase', n=0):
+    size = len(phrase) + 2
+    if n == 0:
+        print('=' * size)
+        print(f'{phrase.center(size).upper()}')
+        print('=' * size, end='')
+    if n == 1:
+        print('~' * size)
+        print(f'{phrase.center(size).upper()}')
+        print('~' * size)
+    if n == 2:
+        print('-' * size)
+        print(f'{phrase.center(size).upper()}')
+        print('-' * size)
+
+
+def dividerLine(n):
+    if n == 0:
+        print('=' * 40)
+    if n == 1:
+        print('~' * 40)
+    if n == 2:
+        print('-' * 40)
+
+
 # Functions to verify something
 
 
-def readoneName(phrase='Name: ', n=0):
+def read_oneName(phrase='Name: ', n=0):
     """
     Checker that the user correctly typed a name
     :param phrase: phrase you want to use in the input
@@ -61,3 +83,19 @@ def readoneName(phrase='Name: ', n=0):
         return name.lower()
     elif n == 2:
         return name.upper()
+
+
+# Functions to customize menu
+
+def welcome():
+    formatText('Welcome to creating your menu')
+
+
+
+def styleChoice(n=0):
+    print(f'{dynamicFormat("Style 1", n=0)}', end='')
+    print(f'{dynamicFormat("Style 2", n=1)}', end='')
+    print(f'{dynamicFormat("Style 3", n=1)}', end='')
+
+
+#styleChoice()
