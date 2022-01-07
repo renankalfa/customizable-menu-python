@@ -19,6 +19,28 @@ def errormessage(n=0):
 
 # Functions for visual "effects"
 
+
+def formatar(phrase='frase formatada', n=0, show=True):
+    if n == 0:
+        if show is True:
+            print('=' * 40)
+            print(f'{phrase.center(40).upper()}')
+            print('=' * 40)
+        return n
+    if n == 1:
+        if show is True:
+            print('~' * 40)
+            print(f'{phrase.center(40).upper()}')
+            print('~' * 40)
+        return n
+    if n == 2:
+        if show is True:
+            print('-' * 40)
+            print(f'{phrase.center(40).upper()}')
+            print('-' * 40)
+        return n
+
+
 # Functions to verify something
 
 
