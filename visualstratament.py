@@ -85,4 +85,15 @@ def read_oneName(phrase='Name: ', n=0):
         return name.upper()
 
 
+def readName(phrase='Name: ', n=0):
+    while True:
+        name = input(phrase)
+        list_words = name.split()
+        for word in list_words:
+            if word.isalnum() is False:
+                continue
+        break
+    return name
 
+
+print(readName('Nome composto: '))
