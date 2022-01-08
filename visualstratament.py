@@ -85,16 +85,4 @@ def read_oneName(phrase='Name: ', n=0):
         return name.upper()
 
 
-# Functions to customize menu
 
-def welcome():
-    formatText('Welcome to creating your menu')
-
-
-def styleChoice(n=0):
-    print(f'{dynamicFormat("Style 1", n=0)}', end='')
-    print(f'{dynamicFormat("Style 2", n=1)}', end='')
-    print(f'{dynamicFormat("Style 3", n=1)}', end='')
-
-
-#styleChoice()
