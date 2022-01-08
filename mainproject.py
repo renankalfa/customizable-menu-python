@@ -1,6 +1,9 @@
 from visualstratament import *
 from generalfunctions import *
 from databaseinhands import *
+from personalization import *
 
-styleChoice()
-dt_create_with_name()
+# Parte de personalização
+# Nome do Menu/Estilo/Cores/Nome da base de dados
+
+# Mostrar o menu (while True)
