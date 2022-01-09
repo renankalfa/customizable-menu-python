@@ -54,13 +54,32 @@ def dynamicFormat(phrase='no phrase', n=0):
         print('-' * size)
 
 
-def dividerLine(n=0):
+def dividerLine(n=0, t=40):
     if n == 0:
-        print('=' * 40)
+        print('=' * t)
     if n == 1:
-        print('~' * 40)
+        print('~' * t)
     if n == 2:
-        print('-' * 40)
+        print('-' * t)
+
+
+def styleShow_options():
+    dividerLine(0, 38)
+    allindict = {'Style1': '=', 'Style2': '~', 'Style3': '-'}
+    for values in allindict.values():
+        print(f'{values * 6:>10}', end='  ')
+    print()
+    for keys in allindict.keys():
+        print(f'{keys:>10}', end='  ')
+    print()
+    for values in allindict.values():
+        print(f'{values * 6:>10}', end='  ')
+    print()
+    dividerLine(0, 38)
+
+
+
+
 
 # Functions to verify something
 
