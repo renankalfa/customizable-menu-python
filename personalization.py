@@ -7,6 +7,16 @@ def name_menu():
     return name
 
 
-def style_menu():
-    formatText('STYLE PERSONALIZATION')
-    style_option = int(input('Style: '))
+def styleOptions_show():
+    dividerLine(0)
+    dict = {'Style1': '=', 'Style2': '~', 'Style3': '-'}
+    for values in dict.values():
+        print(f'{values * 6}', end='  ')
+    print()
+    for keys in dict.keys():
+        print(f'{keys}', end='  ')
+    print()
+    for values in dict.values():
+        print(f'{values * 6}', end='  ')
+    print()
+    dividerLine(0)

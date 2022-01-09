@@ -54,14 +54,13 @@ def dynamicFormat(phrase='no phrase', n=0):
         print('-' * size)
 
 
-def dividerLine(n):
+def dividerLine(n=0):
     if n == 0:
         print('=' * 40)
     if n == 1:
         print('~' * 40)
     if n == 2:
         print('-' * 40)
-
 
 # Functions to verify something
 
@@ -85,7 +84,7 @@ def read_oneName(phrase='Name: ', n=0):
         return name.upper()
 
 
-def readNameorNumber(phrase='Name: ', n=0):
+def readName_withNumber(phrase='Name: ', n=0):
     while True:
         name = input(phrase)
         list_words = name.split()
@@ -102,3 +101,11 @@ def readNameorNumber(phrase='Name: ', n=0):
         return ' '.join(list_words).lower()
     if n == 2:
         return ' '.join(list_words).upper()
+
+
+def readInt_number(pharse='Number: '):
+    number = input(pharse)
+    while not number.isdigit():
+        errormessage(2)
+        number = input(pharse)
+    return number
