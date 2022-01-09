@@ -94,7 +94,7 @@ def columnShow_options(n=0):
     dividerLine(n)
 
 
-# Functions to verify something
+# Functions to verify something test
 
 
 def read_oneName(phrase='Name: ', n=0):
