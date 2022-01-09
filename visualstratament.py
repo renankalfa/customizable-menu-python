@@ -15,6 +15,8 @@ def errormessage(n=0):
         print('\033[31mError! Try to enter a valid integer!\033[m')
     if n == 3:
         print('\033[31mError! Try to enter a valid real number!\033[m')
+    if n == 4:
+        print('\033[31mError! Try entering a valid integer between options!\033[m')
 
 
 def formatText(phrase='frase formatada', n=0, show=True):
@@ -65,20 +67,27 @@ def dividerLine(n=0, t=40):
 
 def styleShow_options():
     dividerLine(0, 38)
-    allindict = {'Style1': '=', 'Style2': '~', 'Style3': '-'}
-    for values in allindict.values():
+    toformat = {'Style1': '=', 'Style2': '~', 'Style3': '-'}
+    for values in toformat.values():
         print(f'{values * 6:>10}', end='  ')
     print()
-    for keys in allindict.keys():
+    for keys in toformat.keys():
         print(f'{keys:>10}', end='  ')
     print()
-    for values in allindict.values():
+    for values in toformat.values():
         print(f'{values * 6:>10}', end='  ')
     print()
     dividerLine(0, 38)
 
 
-
+def colunShow_options(n=0):
+    dividerLine(n)
+    optionslist = ['Names in general', 'Integer Numbers', 'Float Numbers']
+    cont = 1
+    for option_name in optionslist:
+        print(f'\033[33m{cont}\033[m - \033[36m{option_name}\033[m')
+        cont += 1
+    dividerLine(n)
 
 
 # Functions to verify something
@@ -122,9 +131,21 @@ def readName_withNumber(phrase='Name: ', n=0):
         return ' '.join(list_words).upper()
 
 
-def readInt_number(pharse='Number: '):
-    number = input(pharse)
+def readInt_number(phrase='Number: '):
+    number = input(phrase)
     while not number.isdigit():
         errormessage(2)
-        number = input(pharse)
+        number = input(phrase)
+    return number
+
+
+def readInt_inOptions(phrase='Number in options: ', n=1):
+    number = input(phrase)
+    while not number.isdigit():
+        errormessage(2)
+        number = input(phrase)
+    number = int(number)
+    while number < 1 or number > n:
+        errormessage(4)
+        number = readInt_number(phrase)
     return number
