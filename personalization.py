@@ -29,3 +29,4 @@ def personalization():
     types_of_columns = columnsName_ofDf()
     return [menu_name, option_style, types_of_columns]
 
+# [menu_name, option_style, types_of_columns]

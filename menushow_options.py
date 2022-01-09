@@ -1,7 +1,7 @@
 from visualstratament import *
 
 
-def showMenu(name_menu='no name', n=0):
+def showMenu_head(name_menu='no name', n=0):
     formatText(name_menu.upper(), n)
 
 
