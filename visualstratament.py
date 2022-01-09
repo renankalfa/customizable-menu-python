@@ -1,6 +1,10 @@
 # Functions for visual "effects"
 
 
+def welcomemessage():
+    formatText('WELCOME TO MENU PERSONALIZATION')
+
+
 def errormessage(n=0):
     """
     Create a error message
@@ -67,24 +71,24 @@ def dividerLine(n=0, t=40):
 
 def styleShow_options():
     dividerLine(0, 38)
-    toformat = {'Style1': '=', 'Style2': '~', 'Style3': '-'}
-    for values in toformat.values():
+    to_format = {'Style1': '=', 'Style2': '~', 'Style3': '-'}
+    for values in to_format.values():
         print(f'{values * 6:>10}', end='  ')
     print()
-    for keys in toformat.keys():
+    for keys in to_format.keys():
         print(f'{keys:>10}', end='  ')
     print()
-    for values in toformat.values():
+    for values in to_format.values():
         print(f'{values * 6:>10}', end='  ')
     print()
     dividerLine(0, 38)
 
 
-def colunShow_options(n=0):
+def columnShow_options(n=0):
     dividerLine(n)
-    optionslist = ['Names in general', 'Integer Numbers', 'Float Numbers']
+    options_list = ['Names in general', 'Integer Numbers', 'Float Numbers']
     cont = 1
-    for option_name in optionslist:
+    for option_name in options_list:
         print(f'\033[33m{cont}\033[m - \033[36m{option_name}\033[m')
         cont += 1
     dividerLine(n)

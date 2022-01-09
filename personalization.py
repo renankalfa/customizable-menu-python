@@ -14,9 +14,18 @@ def styleOptions():
     return option
 
 
-def colunsName_ofDf():
-    colunShow_options()
+def columnsName_ofDf():
+    columnShow_options()
     column1 = readInt_inOptions('Enter your choice for column 1: ', 3)
-    colunShow_options()
+    columnShow_options()
     column2 = readInt_inOptions('Enter your choice for column 2: ', 3)
     return [column1, column2]
+
+
+def personalization():
+    welcomemessage()
+    menu_name = name_menu()
+    option_style = styleOptions()
+    types_of_columns = columnsName_ofDf()
+    return [menu_name, option_style, types_of_columns]
+
