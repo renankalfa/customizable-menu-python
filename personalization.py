@@ -20,8 +20,3 @@ def colunsName_ofDf():
     colunShow_options()
     column2 = readInt_inOptions('Enter your choice for column 2: ', 3)
     return [column1, column2]
-
-
-name_menu()
-styleOptions()
-colunsName_ofDf()
