@@ -139,7 +139,7 @@ def readInt_number(phrase='Number: '):
     return number
 
 
-def readInt_inOptions(phrase='Number in options: ', n=1):
+def readInt_inOptions(phrase='Number in options: ', n=2):
     number = input(phrase)
     while not number.isdigit():
         errormessage(2)
