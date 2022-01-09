@@ -1,9 +1,9 @@
 from visualstratament import *
-from generalfunctions import *
+from menushow_options import *
 from databaseinhands import *
 from personalization import *
 
 # Parte de personalização
-# Nome do Menu/Estilo/Cores/Nome da base de dados
-
+user_options = personalization()
 # Mostrar o menu (while True)
+# while True:
