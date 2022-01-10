@@ -5,7 +5,7 @@ from databaseinhands import *
 def name_menu():
     formatText('MENU PERSONALIZATION')
     name = readName_withNumber('Name of your menu: ', 2)
-    return name
+    return str(name)
 
 
 def styleOptions():
@@ -28,5 +28,6 @@ def personalization():
     option_style = styleOptions()
     types_of_columns = columnsName_ofDf()
     return [menu_name, option_style, types_of_columns]
+
 
 # [menu_name, option_style, types_of_columns]
