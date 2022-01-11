@@ -21,38 +21,48 @@ def dt_create_with_name():
 
 
 def nameOf_columns():
-    name1 = read_oneName('First column name: ')
-    name2 = read_oneName('Second column name: ')
+    name1 = readMultiples_Names('First column name: ')
+    name2 = readMultiples_Names('Second column name: ')
     return [name1, name2]
 
 
 def writeType_dt(*lis):
-    if c1 == 1:
-        name = readMultiples_Names('Name of element: ')
-    if c1 == 2:
-        number_int = readInt_number('Integer Number: ')
-    if c1 == 3:
-        number_float = readFloat_number('Float Number: ')
-    if c2 == 1:
-        name = readMultiples_Names('Name of element: ')
-    if c2 == 2:
-        number_int = readInt_number('Integer Number: ')
-    if c2 == 3:
-        number_float = readFloat_number('Float Number: ')
+    c1 = ''
+    c2 = ''
+    if lis[0][2][0] == 1:
+        c1 = readMultiples_Names(f'{lis[0][3][0]}: ')
+    if lis[0][2][0] == 2:
+        c1 = readInt_number(f'{lis[0][3][0]}: ')
+    if lis[0][2][0] == 3:
+        c1 = readFloat_number(f'{lis[0][3][0]}: ')
+    if lis[0][2][1] == 1:
+        c2 = readMultiples_Names(f'{lis[0][3][1]}: ')
+    if lis[0][2][1] == 2:
+        c2 = readInt_number(f'{lis[0][3][1]}: ')
+    if lis[0][2][1] == 3:
+        c2 = readFloat_number(f'{lis[0][3][1]}: ')
+    return [c1, c2]
 
 
-writeType_dt(2, 1)
+li = ['KALFA MENU', 1, [1, 2], ['Nome da família', 'Numero favorito'], 'kalfa.txt']
+lup = ('1', '2', 'Nome da família', 'Numero favorito')
+print(writeType_dt(li))
 # [menu_name, option_style, types_of_columns, name_columns, name_dt]
 #     0            1                 2            3            4
+
 
 def storeFile(menu_name='', c1=1, c2=2):
     try:
         a = open(menu_name, 'r', encoding='utf-8')
         conteudo = a.readline()
-        conteudo.append(f'{c1};{c2}\n')
+        add_this = writeType_dt()
+        conteudo.append(f'{add_this[0]};{add_this[1]}\n')
+        print(conteudo)
     except Exception as error:
         print(f'{error}')
+    else:
+        print('deu certo')
 
 
 # li = ['KALFA MENU', 1, [1, 2], 'kalfa.txt']
-# storeFile(menu_name=li[0], c1=li[2][0], c2=li[2][1])
+storeFile(menu_name=li[0], c1=li[2][0], c2=li[2][1])
