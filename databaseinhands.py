@@ -44,25 +44,27 @@ def writeType_dt(*lis):
     return [c1, c2]
 
 
-li = ['KALFA MENU', 1, [1, 2], ['Nome da família', 'Numero favorito'], 'kalfa.txt']
+li = ['KALFA MENU', 1, [2, 2], ['Nome da família', 'Numero favorito'], 'kalfa.txt']
 lup = ('1', '2', 'Nome da família', 'Numero favorito')
-print(writeType_dt(li))
 # [menu_name, option_style, types_of_columns, name_columns, name_dt]
 #     0            1                 2            3            4
 
 
-def storeFile(menu_name='', c1=1, c2=2):
+def storeFile(*lis):
     try:
-        a = open(menu_name, 'r', encoding='utf-8')
+        print(lis[0][4])
+        a = open(lis[0][4], 'r', encoding='utf-8')
         conteudo = a.readline()
-        add_this = writeType_dt()
-        conteudo.append(f'{add_this[0]};{add_this[1]}\n')
-        print(conteudo)
+        add_this = writeType_dt(lis[0])
+        print(add_this, add_this[0])
+        add = f'{str(add_this[0])};{str(add_this[1])}\n'
+        conteudo.append(add)
     except Exception as error:
         print(f'{error}')
     else:
-        print('deu certo')
+        a = open(lis[0][4], 'wt', encoding='utf-8')
+        a.writelines(conteudo)
+        a.close()
 
 
-# li = ['KALFA MENU', 1, [1, 2], 'kalfa.txt']
-storeFile(menu_name=li[0], c1=li[2][0], c2=li[2][1])
+storeFile(li)
