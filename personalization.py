@@ -27,9 +27,9 @@ def personalization():
     menu_name = name_menu()
     option_style = styleOptions()
     types_of_columns = columnsName_ofDf()
-
+    name_columns = nameOf_columns()
     name_dt = dt_create_with_name()
-    return [menu_name, option_style, types_of_columns, name_dt]
+    return [menu_name, option_style, types_of_columns, name_columns, name_dt]
 
 
 # [menu_name, option_style, types_of_columns, name_dt]

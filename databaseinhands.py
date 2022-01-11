@@ -26,23 +26,24 @@ def nameOf_columns():
     return [name1, name2]
 
 
-def writeType_dt(c1=1, c2=2):
+def writeType_dt(*lis):
     if c1 == 1:
         name = readMultiples_Names('Name of element: ')
     if c1 == 2:
         number_int = readInt_number('Integer Number: ')
     if c1 == 3:
         number_float = readFloat_number('Float Number: ')
+    if c2 == 1:
+        name = readMultiples_Names('Name of element: ')
+    if c2 == 2:
+        number_int = readInt_number('Integer Number: ')
+    if c2 == 3:
+        number_float = readFloat_number('Float Number: ')
 
 
-# Name_dt, int and int
-# Name_dt, int and float
-# Name_dt, int and name
-
-# Name_dt, float and int
-# Name_dt, float and float
-# Name_dt, float and name
-# [menu_name, option_style, types_of_columns, name_dt]
+writeType_dt(2, 1)
+# [menu_name, option_style, types_of_columns, name_columns, name_dt]
+#     0            1                 2            3            4
 
 def storeFile(menu_name='', c1=1, c2=2):
     try:
@@ -53,5 +54,5 @@ def storeFile(menu_name='', c1=1, c2=2):
         print(f'{error}')
 
 
-li = ['KALFA MENU', 1, [1, 2], 'kalfa.txt']
-storeFile(menu_name=li[0], c1=li[2][0], c2=li[2][1])
+# li = ['KALFA MENU', 1, [1, 2], 'kalfa.txt']
+# storeFile(menu_name=li[0], c1=li[2][0], c2=li[2][1])
