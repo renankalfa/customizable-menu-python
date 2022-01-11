@@ -19,6 +19,22 @@ def dt_create_with_name():
 # Name_dt, name and float
 # Name_dt, name and name
 
+
+def nameOf_columns():
+    name1 = read_oneName('First column name: ')
+    name2 = read_oneName('Second column name: ')
+    return [name1, name2]
+
+
+def writeType_dt(c1=1, c2=2):
+    if c1 == 1:
+        name = readMultiples_Names('Name of element: ')
+    if c1 == 2:
+        number_int = readInt_number('Integer Number: ')
+    if c1 == 3:
+        number_float = readFloat_number('Float Number: ')
+
+
 # Name_dt, int and int
 # Name_dt, int and float
 # Name_dt, int and name
@@ -28,14 +44,11 @@ def dt_create_with_name():
 # Name_dt, float and name
 # [menu_name, option_style, types_of_columns, name_dt]
 
-def storeFile(menu_name='', c1=0, c2=1):
+def storeFile(menu_name='', c1=1, c2=2):
     try:
-        print(c1)
-        print(c2)
-        print(menu_name)
-        # a = open(menu_name, 'r', encoding='utf-8')
-        # conteudo = a.readline()
-        # conteudo.append(f'{};{}\n')
+        a = open(menu_name, 'r', encoding='utf-8')
+        conteudo = a.readline()
+        conteudo.append(f'{c1};{c2}\n')
     except Exception as error:
         print(f'{error}')
 

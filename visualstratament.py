@@ -135,12 +135,42 @@ def readName_withNumber(phrase='Name: ', n=0):
         return ' '.join(list_words).upper()
 
 
+def readMultiples_Names(phrase='Name: ', n=0):
+    while True:
+        name = input(phrase)
+        list_words = name.split()
+        c = 0
+        for word in list_words:
+            if word.isalpha() is False:
+                errormessage(1)
+                c += 1
+        if name.strip() == '':
+            errormessage(1)
+            c += 1
+        if c == 0:
+            break
+    if n == 0:
+        return ' '.join(list_words)
+    if n == 1:
+        return ' '.join(list_words).lower()
+    if n == 2:
+        return ' '.join(list_words).upper()
+
+
 def readInt_number(phrase='Number: '):
     number = input(phrase)
     while not number.isdigit():
         errormessage(2)
         number = input(phrase)
     return int(number)
+
+
+def readFloat_number(phrase='Number float: '):
+    number = input(phrase)
+    while not number.replace('.', '').replace(',', '').isnumeric():
+        errormessage(3)
+        number = input(phrase)
+    return float(number)
 
 
 def readInt_inOptions(phrase='Number in options: ', n=2):
