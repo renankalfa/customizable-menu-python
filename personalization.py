@@ -31,4 +31,4 @@ def personalization():
     return [menu_name, option_style, types_of_columns, name_dt]
 
 
-# [menu_name, option_style, types_of_columns]
+# [menu_name, option_style, types_of_columns, name_dt]
