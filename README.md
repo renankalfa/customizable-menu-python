@@ -4,4 +4,4 @@ A minha ideia com esse projeto pessoal é criar um menu totalmente personalizáv
 
 Assim que o projeto criar uma base boa, eu adicionarei informações mais completas sobre o projeto.
 
-Em andamento.... 😁
+Em andamento (90%).... 😁
