@@ -11,9 +11,9 @@ while True:
     option = readInt_inOptions('Your option > ', n=3)
     if option == 1:
         storeFile(user_options)
-    # if option == 2:
+    if option == 2:
         # Criar função para mostrar as colunas
-        # Criar função para mostrar com vários tipos de formatações
+        showDt(user_options)
     if option == 3:
         goodbye_message(user_options[1])
         break

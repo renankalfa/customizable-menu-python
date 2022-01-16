@@ -7,7 +7,7 @@ def dt_create_with_name():
     join = [name, '.txt']
     name_file = ''.join(join)
     try:
-        a = open(name_file, 'wt', encoding='utf-8')
+        a = open(name_file, 'w+', encoding='utf-8')
     except:
         errormessage()
     else:
@@ -44,7 +44,7 @@ def writeType_dt(*lis):
     return [c1, c2]
 
 
-li = ['KALFA MENU', 1, [2, 2], ['Nome', 'Numero favorito'], 'kalfa.txt']
+# li = ['KALFA MENU', 1, [2, 2], ['Nome', 'Numero favorito'], 'kalfa.txt']
 # [menu_name, option_style, types_of_columns, name_columns, name_dt]
 #     0            1                 2            3            4
 
@@ -62,24 +62,22 @@ def storeFile(*lis):
 
 #                                 0                                      1
 #            0        1     2                   3                      4
-lis = (['KALFA MENU', 2, [1, 2], ['Names', 'Favorite Numbers'], 'catálogo.txt'],)
+# lis = (['KALFA MENU', 2, [1, 2], ['Names', 'Favorite Numbers'], 'catálogo.txt'],)
 # print(f'{lis[0][3][0]:<30}{lis[0][3][1]}')
 
 
 def showDt(*lis):
     try:
-        print(lis)
         a = open(lis[0][0][4], 'rt', encoding='utf-8')
     except Exception as error:
         print(error)
         print('\033[31mError reading file!\033[m')
     else:
-        dividerLine(lis[0][0][1])
+        dividerLine(lis[0][0][1], 50)
         print(f'{lis[0][0][3][0]:<30}{lis[0][0][3][1]}')
-        dividerLine(lis[0][0][1])
+        dividerLine(lis[0][0][1], 50)
         for linha in a:
             dado = linha.replace('\n', '').split(';')
-            print(f'{dado[0]:<30}{dado[1]}')
-
-
-showDt(lis)
+            print(f'{dado[0]:<30}',end='')
+            print(f'{dado[1]}')
+        dividerLine(lis[0][0][1], 50)

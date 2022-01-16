@@ -22,21 +22,21 @@ def errormessage(n=0):
 def formatText(phrase='frase formatada', n=0, show=True):
     if n == 0:
         if show is True:
-            print('=' * 40)
-            print(f'{phrase.center(40).upper()}')
-            print('=' * 40)
+            print('=' * 50)
+            print(f'{phrase.center(50).upper()}')
+            print('=' * 50)
         return n
     if n == 1:
         if show is True:
-            print('~' * 40)
-            print(f'{phrase.center(40).upper()}')
-            print('~' * 40)
+            print('~' * 50)
+            print(f'{phrase.center(50).upper()}')
+            print('~' * 50)
         return n
     if n == 2:
         if show is True:
-            print('-' * 40)
-            print(f'{phrase.center(40).upper()}')
-            print('-' * 40)
+            print('-' * 50)
+            print(f'{phrase.center(50).upper()}')
+            print('-' * 50)
         return n
 
 
@@ -56,7 +56,7 @@ def dynamicFormat(phrase='no phrase', n=0):
         print('-' * size)
 
 
-def dividerLine(n=0, t=40):
+def dividerLine(n=0, t=50):
     if n == 0:
         print('=' * t)
     if n == 1:
@@ -66,28 +66,28 @@ def dividerLine(n=0, t=40):
 
 
 def styleShow_options():
-    dividerLine(0, 38)
+    dividerLine(0, 50)
     to_format = {'Style1': '=', 'Style2': '~', 'Style3': '-'}
     for values in to_format.values():
-        print(f'{values * 6:>10}', end='  ')
+        print(f'{values * 6:>13}', end='  ')
     print()
     for keys in to_format.keys():
-        print(f'{keys:>10}', end='  ')
+        print(f'{keys:>13}', end='  ')
     print()
     for values in to_format.values():
-        print(f'{values * 6:>10}', end='  ')
+        print(f'{values * 6:>13}', end='  ')
     print()
-    dividerLine(0, 38)
+    dividerLine(0, 50)
 
 
-def columnShow_options(n=0):
-    dividerLine(n)
+def columnShow_options(n=50):
+    dividerLine(t=n)
     options_list = ['Names in general', 'Integer Numbers', 'Float Numbers']
     cont = 1
     for option_name in options_list:
         print(f'\033[33m{cont}\033[m - \033[36m{option_name}\033[m')
         cont += 1
-    dividerLine(n)
+    dividerLine(t=n)
 
 
 # Functions to verify something test
