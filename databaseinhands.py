@@ -51,7 +51,6 @@ li = ['KALFA MENU', 1, [2, 2], ['Nome', 'Numero favorito'], 'kalfa.txt']
 
 def storeFile(*lis):
     try:
-        print(lis[0][4])
         a = open(lis[0][4], 'a', encoding='utf-8')
         add_this = writeType_dt(lis[0])
         a.write(f'{str(add_this[0])};{str(add_this[1])}\n')
