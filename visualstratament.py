@@ -188,8 +188,5 @@ def welcomemessage():
     formatText('WELCOME TO MENU PERSONALIZATION')
 
 
-def goodbye_message():
-    formatText('it\'s never goodbye')
-
-
-goodbye_message()
+def goodbye_message(n=0):
+    formatText('it\'s never goodbye', n)
