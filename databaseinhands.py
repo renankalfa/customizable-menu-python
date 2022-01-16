@@ -12,7 +12,7 @@ def dt_create_with_name():
         a = open(name_file, 'w+', encoding='utf-8')
         sleep(1)
         a.flush()
-        os.fsync(a.fileno())
+        os.fsync(a)
     except Exception as error:
         print(error)
     else:
@@ -60,11 +60,11 @@ def storeFile(*lis):
         sleep(1)
         add_this = writeType_dt(lis[0])
         a.flush()
-        os.fsync(a.fileno())
+        os.fsync(a)
         a.write(f'{str(add_this[0])};{str(add_this[1])}\n')
     except Exception as error:
         print(f'{error}')
-    else:
+    finally:
         a.close()
 
 
