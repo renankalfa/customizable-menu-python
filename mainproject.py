@@ -16,6 +16,6 @@ while True:
         storeFile(user_options)
     # if option == 2:
         # Criar função para mostrar com vários tipos de formatações
-    # if option == 3:
+    if option == 3:
         # função para despedida
-        # break
+        break

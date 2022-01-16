@@ -1,10 +1,6 @@
 # Functions for visual "effects"
 
 
-def welcomemessage():
-    formatText('WELCOME TO MENU PERSONALIZATION')
-
-
 def errormessage(n=0):
     """
     Create a error message
@@ -183,3 +179,17 @@ def readInt_inOptions(phrase='Number in options: ', n=2):
         errormessage(4)
         number = readInt_number(phrase)
     return number
+
+
+# Welcomes e Good Bye
+
+
+def welcomemessage():
+    formatText('WELCOME TO MENU PERSONALIZATION')
+
+
+def goodbye_message():
+    formatText('it\'s never goodbye')
+
+
+goodbye_message()
