@@ -12,6 +12,7 @@ while True:
     if option == 1:
         storeFile(user_options)
     # if option == 2:
+        # Criar função para mostrar as colunas
         # Criar função para mostrar com vários tipos de formatações
     if option == 3:
         goodbye_message(user_options[1])

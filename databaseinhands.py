@@ -60,4 +60,16 @@ def storeFile(*lis):
         a.close()
 
 
-# storeFile(li)
+#                                 0                                      1
+#        0        1     2                   3                      4
+lis = (['KALFA MENU', 2, [1, 2], ['Names', 'Favorite Numbers'], 'kalfa.txt'],)
+print(f'{lis[0][3][0]:<30}{lis[0][3][1]}')
+
+
+def showDt(*lis):
+    try:
+        a = open(lis[0][0], 'rt', encoding='utf-8')
+    except:
+        print('\033[31mError reading file!\033[m')
+    else:
+        print(f'{lis[0][3][0]:<16}{lis[0][3][1]}')
