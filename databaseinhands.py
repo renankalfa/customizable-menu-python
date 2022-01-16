@@ -1,4 +1,6 @@
 from visualstratament import *
+import os
+from time import sleep
 
 
 def dt_create_with_name():
@@ -8,8 +10,11 @@ def dt_create_with_name():
     name_file = ''.join(join)
     try:
         a = open(name_file, 'w+', encoding='utf-8')
-    except:
-        errormessage()
+        sleep(1)
+        a.flush()
+        os.fsync(a.fileno())
+    except Exception as error:
+        print(error)
     else:
         a.close()
         return name_file
@@ -27,8 +32,8 @@ def nameOf_columns():
 
 
 def writeType_dt(*lis):
-    c1 = ''
-    c2 = ''
+    c1 = 1
+    c2 = 2
     if lis[0][2][0] == 1:
         c1 = readMultiples_Names(f'{lis[0][3][0]}: ')
     if lis[0][2][0] == 2:
@@ -52,7 +57,10 @@ def writeType_dt(*lis):
 def storeFile(*lis):
     try:
         a = open(lis[0][4], 'a', encoding='utf-8')
+        sleep(1)
         add_this = writeType_dt(lis[0])
+        a.flush()
+        os.fsync(a.fileno())
         a.write(f'{str(add_this[0])};{str(add_this[1])}\n')
     except Exception as error:
         print(f'{error}')
