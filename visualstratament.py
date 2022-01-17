@@ -163,7 +163,7 @@ def readFloat_number(phrase='Number float: '):
     while not number.replace('.', '').replace(',', '').isnumeric():
         errormessage(3)
         number = input(phrase)
-    return float(number)
+    return number.replace('.', ',')
 
 
 def readInt_inOptions(phrase='Number in options: ', n=2):
