@@ -26,3 +26,13 @@ Dois exercícios que eu fiz durante o curso foram os culpados por essa ideia.
 A união da ideia da personalização e do menu com uma base de dados em um arquivo de texto, foram as geradoras desse meu projeto pessoal.
 
 ## Problemas, dificuldades, erros e como superei tudo
+
+Dificuldades:
+- **Por onde começar?** Eu fiquei me perguntando isso até colocar o projeto no papel e destrinchar em partes. Fiz a modularização e separei bem onde ficaria cada função. E, com isso, eu pude ir construindo cada parte aos poucos e integrando cada uma. Apenas quando as partes estavam funcionando bem solo, eu as integrei no arquivo .py principal.
+
+Problemas e erros:
+- **Git/Github**: quando optei pelo PyCharm, tive que aprender a como usar e como funcionava a integração dele com o Git. Depois de uma hora testando cada botão, entendendo cada funcionalidade, eu acabei achando bem prático até, ainda mais por tudo ser feito na própria IDE. Com o tempo, **entender as branches, commits, push, pull virou algo  fácil** com a prática durante esse projeto.
+- **Tipos primitivos**: um dos erros que tiraram um pouco do meu tempo foi a incompatibilidade dos tipos primitivos. Quando eu ficava um tempo olhando o código, testando com uns prints e o type e não resolvia, eu "**apelava**" e recorria ao debug. Foi uma ferramenta que me salvou e me mostrou exatamente o que estava errado. Recomendo muito usá-la para entender melhor o que está acontecendo e, principalmente, o que está acontecendo de errado.
+
+![debug para achar o erro](https://user-images.githubusercontent.com/97196457/149842047-6cd4227e-2b7b-4dec-930b-5631c6b83c1d.png)
+
