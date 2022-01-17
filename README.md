@@ -1,5 +1,10 @@
 # Menu personalizável pelo usuário em Python
 
+## Vídeo no youtube mostrando o projeto
+
+[<img width="1584" alt="miniatura" src="https://user-images.githubusercontent.com/97196457/149819669-a5f87b9c-7219-4aca-a741-3bbb7df8d847.png">
+](https://youtu.be/tej7xaOFyyg)
+
 ## Ideia geral do projeto
 A minha ideia com esse projeto pessoal é criar um menu personalizável com Python. Onde o usuário poderá escolher o **nome do menu, estilo visual de formatação, nome das colunas da sua base de dados, tipos primitivos das colunas e uma base de dados com nome personalizado.**
 
@@ -9,4 +14,8 @@ E depois desse processo da personalização do menu, você entra de fato no menu
 
 <img width="1584" alt="menu e opções" src="https://user-images.githubusercontent.com/97196457/149817857-118ed0db-3116-4b27-b436-1f332c828bad.png">
 
-Em andamento (90%).... 😁
+
+
+##
+
+## Inspirações e surgimento da ideia
