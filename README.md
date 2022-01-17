@@ -27,12 +27,31 @@ A união da ideia da personalização e do menu com uma base de dados em um arqu
 
 ## Problemas, dificuldades, erros e como superei tudo
 
-Dificuldades:
+### **Dificuldades**:
 - **Por onde começar?** Eu fiquei me perguntando isso até colocar o projeto no papel e destrinchar em partes. Fiz a modularização e separei bem onde ficaria cada função. E, com isso, eu pude ir construindo cada parte aos poucos e integrando cada uma. Apenas quando as partes estavam funcionando bem solo, eu as integrei no arquivo .py principal.
 
-Problemas e erros:
-- **Git/Github**: quando optei pelo PyCharm, tive que aprender a como usar e como funcionava a integração dele com o Git. Depois de uma hora testando cada botão, entendendo cada funcionalidade, eu acabei achando bem prático até, ainda mais por tudo ser feito na própria IDE. Com o tempo, **entender as branches, commits, push, pull virou algo  fácil** com a prática durante esse projeto.
-- **Tipos primitivos**: um dos erros que tiraram um pouco do meu tempo foi a incompatibilidade dos tipos primitivos. Quando eu ficava um tempo olhando o código, testando com uns prints e o type e não resolvia, eu "**apelava**" e recorria ao debug. Foi uma ferramenta que me salvou e me mostrou exatamente o que estava errado. Recomendo muito usá-la para entender melhor o que está acontecendo e, principalmente, o que está acontecendo de errado.
+<div align="center">
+  <img height="200em" src="https://user-images.githubusercontent.com/97196457/149844351-cde153b6-134a-4ef9-bdfc-9f87a9163d58.jpeg"/>
+</div>
 
-![debug para achar o erro](https://user-images.githubusercontent.com/97196457/149842047-6cd4227e-2b7b-4dec-930b-5631c6b83c1d.png)
+### **Problemas e erros**:
+- **Git/Github**: quando optei pelo PyCharm, tive que aprender a como usar e como funcionava a integração dele com o Git. Depois de uma hora testando cada botão, entendendo cada funcionalidade, eu acabei achando bem prático até, ainda mais por tudo ser feito na própria IDE. Com o tempo, **entender as branches, commits, push, pull virou algo  fácil**.
+
+<div align="center">
+  <img height="200em" src="https://user-images.githubusercontent.com/97196457/149844037-e5e9b952-d78a-46f5-9804-fd0f794ccebc.png"/>
+</div>
+
+- **Tipos primitivos**: quando eu ficava um tempo olhando o código, testando com uns prints e o type e não resolvia, eu "**apelava**" e recorria ao debug. Foi uma ferramenta que me salvou e me mostrou exatamente o que estava errado. Recomendo muito usá-la para entender melhor o que está acontecendo e, principalmente, o que está acontecendo de errado.
+
+<div align="center">
+  <img height="200em" src="https://user-images.githubusercontent.com/97196457/149842047-6cd4227e-2b7b-4dec-930b-5631c6b83c1d.png"/>
+</div>
+
+- **Arquivo da base de dados só era "criado" depois de encerrado o programa**: o último problema que passei foi o fato de não aparecer a base de dados no PyCharm durante a execução do programa. Depois de um bom tempo tentando resolver, acabei por perceber que isso não era um problema e não me causariam outros, já que ele criava o arquivo, só não mostrava no PyCharm. Então acabei por simplesmente ignorar.
+
+<div align="center">
+  <img height="200em" src="https://user-images.githubusercontent.com/97196457/149842959-98d234b3-ae89-4368-9b17-eaf5394615e6.png"/>
+</div>
+
+- **Listas dentro de funções**: por conta da personalização, optei por trabalhar com listas. No início, eu ficava completamente perdido, até que criei comentários com as listas e os seus índices. E uma outra coisa que eu não contava, era que essa lista quando entrava numa função, ela ficava dentro de uma tupla, o que teria que acrescentar um \[0\] para enfim, poder escolher entre os elementos da lista.
 
