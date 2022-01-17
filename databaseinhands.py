@@ -29,11 +29,21 @@ def dt_create_with_name():
 
 def nameOf_columns():
     dividerLine()
-    name1 = readMultiples_Names('First column name: ')
-    name2 = readMultiples_Names('Second column name: ')
+    name1 = '\033[46mfirst column name\033[m'
+    name2 = '\033[43msecond columnn name\033[m'
+    print(f'{name1:<30}{name2}')
+    dividerLine()
+    template = {'undefined': 0, 'undefined2': 0}
+    for keys, values in template.items():
+        print(f'{keys:<30}{values}')
+    dividerLine()
+    name1 = readMultiples_Names('\033[36mFirst column name\033[m > ')
+    name2 = readMultiples_Names('\033[33mSecond column name\033[m > ')
     dividerLine()
     return [name1, name2]
 
+
+nameOf_columns()
 
 def writeType_dt(*lis):
     c1 = 'undefined'
