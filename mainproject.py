@@ -12,6 +12,7 @@ while True:
         storeFile(user_options)
     if option == 2:
         showDt(user_options)
+        nothing = input('Press enter to continue > ')
     if option == 3:
         goodbye_message(user_options[1])
         break

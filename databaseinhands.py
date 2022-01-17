@@ -26,8 +26,10 @@ def dt_create_with_name():
 
 
 def nameOf_columns():
+    dividerLine()
     name1 = readMultiples_Names('First column name: ')
     name2 = readMultiples_Names('Second column name: ')
+    dividerLine()
     return [name1, name2]
 
 
