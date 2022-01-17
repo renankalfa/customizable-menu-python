@@ -6,13 +6,13 @@ def errormessage(n=0):
     """
     if n == 0:
         print('\033[31mError! Try again! \033[m')
-    if n == 1:
+    elif n == 1:
         print('\033[31mError! Try to enter a valid name!\033[m')
-    if n == 2:
+    elif n == 2:
         print('\033[31mError! Try to enter a valid integer!\033[m')
-    if n == 3:
+    elif n == 3:
         print('\033[31mError! Try to enter a valid real number!\033[m')
-    if n == 4:
+    elif n == 4:
         print('\033[31mError! Try entering a valid integer between options!\033[m')
 
 
@@ -23,13 +23,13 @@ def formatText(phrase='frase formatada', n=0, show=True):
             print(f'{phrase.center(50).upper()}')
             print('=' * 50)
         return n
-    if n == 1:
+    elif n == 1:
         if show is True:
             print('~' * 50)
             print(f'{phrase.center(50).upper()}')
             print('~' * 50)
         return n
-    if n == 2:
+    elif n == 2:
         if show is True:
             print('-' * 50)
             print(f'{phrase.center(50).upper()}')
@@ -43,11 +43,11 @@ def dynamicFormat(phrase='no phrase', n=0):
         print('=' * size)
         print(f'{phrase.center(size).upper()}')
         print('=' * size, end='')
-    if n == 1:
+    elif n == 1:
         print('~' * size)
         print(f'{phrase.center(size).upper()}')
         print('~' * size)
-    if n == 2:
+    elif n == 2:
         print('-' * size)
         print(f'{phrase.center(size).upper()}')
         print('-' * size)
@@ -56,9 +56,9 @@ def dynamicFormat(phrase='no phrase', n=0):
 def dividerLine(n=0, t=50):
     if n == 0:
         print('=' * t)
-    if n == 1:
+    elif n == 1:
         print('~' * t)
-    if n == 2:
+    elif n == 2:
         print('-' * t)
 
 
@@ -119,9 +119,9 @@ def readName_withNumber(phrase='Name: ', n=0):
             break
     if n == 0:
         return ' '.join(list_words)
-    if n == 1:
+    elif n == 1:
         return ' '.join(list_words).lower()
-    if n == 2:
+    elif n == 2:
         return ' '.join(list_words).upper()
 
 
@@ -141,9 +141,9 @@ def readMultiples_Names(phrase='Name: ', n=0):
             break
     if n == 0:
         return ' '.join(list_words)
-    if n == 1:
+    elif n == 1:
         return ' '.join(list_words).lower()
-    if n == 2:
+    elif n == 2:
         return ' '.join(list_words).upper()
 
 

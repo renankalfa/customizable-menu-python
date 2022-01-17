@@ -36,20 +36,22 @@ def nameOf_columns():
 
 
 def writeType_dt(*lis):
-    c1 = 1
-    c2 = 2
-    dividerLine(n=lis[0][1])
+    c1 = 'undefined'
+    c2 = 0
+    sleep(0.3)
+    formatText(f'ADDING {lis[0][3][0].upper()} and {lis[0][3][1].upper()}', n=lis[0][1])
+    sleep(0.5)
     if lis[0][2][0] == 1:
         c1 = readMultiples_Names(f'{lis[0][3][0]}: ')
-    if lis[0][2][0] == 2:
+    elif lis[0][2][0] == 2:
         c1 = readInt_number(f'{lis[0][3][0]}: ')
-    if lis[0][2][0] == 3:
+    elif lis[0][2][0] == 3:
         c1 = readFloat_number(f'{lis[0][3][0]}: ')
     if lis[0][2][1] == 1:
         c2 = readMultiples_Names(f'{lis[0][3][1]}: ')
-    if lis[0][2][1] == 2:
+    elif lis[0][2][1] == 2:
         c2 = readInt_number(f'{lis[0][3][1]}: ')
-    if lis[0][2][1] == 3:
+    elif lis[0][2][1] == 3:
         c2 = readFloat_number(f'{lis[0][3][1]}: ')
     dividerLine(n=lis[0][1])
     return [c1, c2]
@@ -76,10 +78,14 @@ def showDt(*lis):
         print(error)
         print('\033[31mError reading file!\033[m')
     else:
+        sleep(0.3)
         dividerLine(lis[0][1], 50)
+        sleep(0.3)
         print(f'{lis[0][3][0]:<30}{lis[0][3][1]}')
+        sleep(0.3)
         dividerLine(lis[0][1], 50)
         for linha in a:
+            sleep(0.5)
             dado = linha.replace('\n', '').split(';')
             print(f'{dado[0]:<30}', end='')
             print(f'{dado[1]}')
