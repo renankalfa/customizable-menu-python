@@ -5,9 +5,6 @@ def showMenu_head(name_menu='no name', n=0):
     formatText(name_menu.upper(), n)
 
 
-#                                 0                                      1
-#        0        1     2                   3                      4
-# (['KALFA MENU', 2, [1, 2], ['Names', 'Favorite Numbers'], 'kalfa.txt'],)
 def showMenu_options(*li):
     lis = [f'New registry ({li[0][3][0]}, {li[0][3][1]})', f'See "{li[0][4]}" database', 'Close Menu']
     for pos, value in enumerate(lis):

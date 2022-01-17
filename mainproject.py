@@ -2,7 +2,6 @@ from menushow_options import *
 from personalization import *
 
 user_options = personalization()
-clearConsole()
 while True:
     showMenu_head(name_menu=user_options[0], n=user_options[1])
     showMenu_options(user_options)
