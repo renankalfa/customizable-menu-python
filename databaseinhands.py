@@ -34,6 +34,7 @@ def nameOf_columns():
 def writeType_dt(*lis):
     c1 = 1
     c2 = 2
+    dividerLine(n=lis[0][1])
     if lis[0][2][0] == 1:
         c1 = readMultiples_Names(f'{lis[0][3][0]}: ')
     if lis[0][2][0] == 2:
@@ -46,6 +47,7 @@ def writeType_dt(*lis):
         c2 = readInt_number(f'{lis[0][3][1]}: ')
     if lis[0][2][1] == 3:
         c2 = readFloat_number(f'{lis[0][3][1]}: ')
+    dividerLine(n=lis[0][1])
     return [c1, c2]
 
 
@@ -64,7 +66,7 @@ def storeFile(*lis):
         a.write(f'{str(add_this[0])};{str(add_this[1])}\n')
     except Exception as error:
         print(f'{error}')
-    finally:
+    else:
         a.close()
 
 
