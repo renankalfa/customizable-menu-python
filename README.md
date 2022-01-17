@@ -14,8 +14,9 @@ E depois desse processo da personalização do menu, você entra de fato no menu
 
 <img width="1584" alt="menu e opções" src="https://user-images.githubusercontent.com/97196457/149817857-118ed0db-3116-4b27-b436-1f332c828bad.png">
 
-
-
 ##
 
 ## Inspirações e surgimento da ideia
+
+Depois de terminar os cursos de Python 3 do [Curso em Vídeo](https://www.cursoemvideo.com). Eu resolvi começar o meu projeto pessoal para dar um começo no meu portifólio. Então fiquei condicionado a pensar no que fazer até que surgisse uma ideia (e surgiu). Mas... o que inspirou essa ideia?
+
