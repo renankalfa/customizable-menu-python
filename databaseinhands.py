@@ -1,6 +1,13 @@
 from visualstratament import *
-import os
 from time import sleep
+import os
+
+
+def clearConsole():
+    command = 'clear'
+    if os.name in ('nt', 'dos'):
+        command = 'cls'
+    os.system(command)
 
 
 def dt_create_with_name():
@@ -18,11 +25,6 @@ def dt_create_with_name():
     else:
         a.close()
         return name_file
-
-
-# Name_dt, name and int
-# Name_dt, name and float
-# Name_dt, name and name
 
 
 def nameOf_columns():
@@ -53,11 +55,6 @@ def writeType_dt(*lis):
     return [c1, c2]
 
 
-# li = ['KALFA MENU', 1, [2, 2], ['Nome', 'Numero favorito'], 'kalfa.txt']
-# [menu_name, option_style, types_of_columns, name_columns, name_dt]
-#     0            1                 2            3            4
-
-
 def storeFile(*lis):
     try:
         a = open(lis[0][4], 'a', encoding='utf-8')
@@ -72,14 +69,6 @@ def storeFile(*lis):
         a.close()
 
 
-#                                 0                                      1
-#            0        1     2                   3                      4
-# lis = (['KALFA MENU', 2, [1, 2], ['Names', 'Favorite Numbers'], 'catálogo.txt'],)
-# print(f'{lis[0][3][0]:<30}{lis[0][3][1]}')
-
-#                           0                                1
-#      0      1    2              3                4
-# (['KALFA', 2, [1, 2], ['Names', 'Numbers'], 'renanss.txt'],)
 def showDt(*lis):
     try:
         a = open(lis[0][4], 'rt', encoding='utf-8')
@@ -92,6 +81,6 @@ def showDt(*lis):
         dividerLine(lis[0][1], 50)
         for linha in a:
             dado = linha.replace('\n', '').split(';')
-            print(f'{dado[0]:<30}',end='')
+            print(f'{dado[0]:<30}', end='')
             print(f'{dado[1]}')
         dividerLine(lis[0][1], 50)

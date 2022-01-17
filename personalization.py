@@ -1,4 +1,3 @@
-from visualstratament import *
 from databaseinhands import *
 
 
@@ -30,6 +29,3 @@ def personalization():
     name_columns = nameOf_columns()
     name_dt = dt_create_with_name()
     return [menu_name, option_style, types_of_columns, name_columns, name_dt]
-
-
-# [menu_name, option_style, types_of_columns, name_dt]

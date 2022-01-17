@@ -1,6 +1,3 @@
-# Functions for visual "effects"
-
-
 def errormessage(n=0):
     """
     Create a error message
@@ -90,9 +87,6 @@ def columnShow_options(n=50):
     dividerLine(t=n)
 
 
-# Functions to verify something test
-
-
 def read_oneName(phrase='Name: ', n=0):
     """
     Checker that the user correctly typed a name
@@ -179,9 +173,6 @@ def readInt_inOptions(phrase='Number in options: ', n=2):
         errormessage(4)
         number = readInt_number(phrase)
     return number
-
-
-# Welcomes e Good Bye
 
 
 def welcomemessage():
