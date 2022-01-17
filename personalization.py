@@ -3,14 +3,19 @@ clearConsole = lambda: print('\n' * 150)
 
 
 def name_menu():
-    formatText('MENU PERSONALIZATION')
-    name = readName_withNumber('Name of your menu: ', 2)
+    print('=' * 50)
+    print('                  \033[46mYOUR NAME MENU\033[m')
+    print('=' * 50)
+    print('1 - building... \n2 - building... \n3 - building...')
+    dividerLine()
+    name = readName_withNumber('\033[36mName of your menu > \033[m', 2)
     return str(name)
 
+name_menu()
 
 def styleOptions():
     styleShow_options()
-    option = readInt_number('Type your option style: ')
+    option = readInt_number('Type your option style > ')
     return option
 
 
