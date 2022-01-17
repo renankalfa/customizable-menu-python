@@ -15,6 +15,6 @@ while True:
         showDt(user_options)
         nothing = input('Press \033[31menter\033[m to continue > ')
     elif option == 3:
-        goodbye_message(user_options[1])
+        goodbye_message()
         break
     clearConsole()

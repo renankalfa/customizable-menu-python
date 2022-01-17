@@ -184,13 +184,14 @@ def welcomemessage():
     print('\033[m')
 
 
-def goodbye_message(n=0):
+def goodbye_message():
     sleep(0.5)
-    print('\033[33m')
+    print('\033[33m', end='')
     dividerLine()
     sleep(0.5)
-    print('\033[36m')
+    print('\033[36m', end='')
     print('it\'s never goodbye'.center(50))
-    print('\033[33m')
+    print('\033[33m', end='')
     sleep(0.5)
     dividerLine()
+    sleep(0.5)

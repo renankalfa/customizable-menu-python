@@ -30,10 +30,10 @@ def columnsName_ofDf():
         print(f'{keys:<30}{values}')
     columnShow_options()
     column1 = readInt_inOptions('What is the data type of the first column?'
-                                '\n> ', 3)
+                                '\n\033[33m>\033[m ', 3)
     columnShow_options()
     column2 = readInt_inOptions('What is the data type of the second column?'
-                                '\n> ', 3)
+                                '\n\033[33m>\033[m ', 3)
     return [column1, column2]
 
 
@@ -46,9 +46,9 @@ def personalization():
     clearConsole()
     option_style = styleOptions()
     clearConsole()
-    types_of_columns = columnsName_ofDf()
-    clearConsole()
     name_columns = nameOf_columns()
+    clearConsole()
+    types_of_columns = columnsName_ofDf()
     clearConsole()
     name_dt = dt_create_with_name()
     return [menu_name, option_style, types_of_columns, name_columns, name_dt]
