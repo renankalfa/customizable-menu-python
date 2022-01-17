@@ -9,7 +9,7 @@ def dt_create_with_name():
     join = [name, '.txt']
     name_file = ''.join(join)
     try:
-        a = open(name_file, 'w+', encoding='utf-8')
+        a = open(name_file, 'w', encoding='utf-8')
         sleep(1)
         a.flush()
         os.fsync(a)
@@ -73,19 +73,21 @@ def storeFile(*lis):
 # lis = (['KALFA MENU', 2, [1, 2], ['Names', 'Favorite Numbers'], 'catálogo.txt'],)
 # print(f'{lis[0][3][0]:<30}{lis[0][3][1]}')
 
-
+#                           0                                1
+#      0      1    2              3                4
+# (['KALFA', 2, [1, 2], ['Names', 'Numbers'], 'renanss.txt'],)
 def showDt(*lis):
     try:
-        a = open(lis[0][0][4], 'rt', encoding='utf-8')
+        a = open(lis[0][4], 'rt', encoding='utf-8')
     except Exception as error:
         print(error)
         print('\033[31mError reading file!\033[m')
     else:
-        dividerLine(lis[0][0][1], 50)
-        print(f'{lis[0][0][3][0]:<30}{lis[0][0][3][1]}')
-        dividerLine(lis[0][0][1], 50)
+        dividerLine(lis[0][1], 50)
+        print(f'{lis[0][3][0]:<30}{lis[0][3][1]}')
+        dividerLine(lis[0][1], 50)
         for linha in a:
             dado = linha.replace('\n', '').split(';')
             print(f'{dado[0]:<30}',end='')
             print(f'{dado[1]}')
-        dividerLine(lis[0][0][1], 50)
+        dividerLine(lis[0][1], 50)

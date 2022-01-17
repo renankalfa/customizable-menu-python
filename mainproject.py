@@ -4,6 +4,8 @@ from databaseinhands import *
 from personalization import *
 
 user_options = personalization()
+
+
 # [menu_name, option_style, types_of_columns, name_columns, name_dt]
 while True:
     showMenu_head(name_menu=user_options[0], n=user_options[1])
@@ -16,4 +18,9 @@ while True:
         showDt(user_options)
     if option == 3:
         goodbye_message(user_options[1])
+        break
+while True:
+    print('Coisa')
+    option = input('>')
+    if str(option) == '':
         break
