@@ -36,8 +36,6 @@ def nameOf_columns():
     return [name1, name2]
 
 
-nameOf_columns()
-
 def writeType_dt(*lis):
     c1 = 'undefined'
     c2 = 0
@@ -84,12 +82,13 @@ def showDt(*lis):
         sleep(0.3)
         dividerLine(lis[0][1], 50)
         sleep(0.3)
-        print(f'{lis[0][3][0]:<30}{lis[0][3][1]}')
+        print(f'\033[36m{lis[0][3][0]:<30}\033[33m{lis[0][3][1]}\033[m')
         sleep(0.3)
         dividerLine(lis[0][1], 50)
         for linha in a:
             sleep(0.5)
             dado = linha.replace('\n', '').split(';')
-            print(f'{dado[0]:<30}', end='')
-            print(f'{dado[1]}')
+            print(f'\033[36m{dado[0]:<30}\033[m', end='')
+            print(f'\033[33m{dado[1]}\033[m')
+        sleep(0.5)
         dividerLine(lis[0][1], 50)

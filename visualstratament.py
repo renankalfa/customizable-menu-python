@@ -1,3 +1,6 @@
+from time import sleep
+
+
 def errormessage(n=0):
     """
     Create a error message
@@ -176,8 +179,18 @@ def readInt_inOptions(phrase='Number in options: ', n=2):
 
 
 def welcomemessage():
+    print('\033[36m', end='')
     formatText('WELCOME TO MENU PERSONALIZATION')
+    print('\033[m')
 
 
 def goodbye_message(n=0):
-    formatText('it\'s never goodbye', n)
+    sleep(0.5)
+    print('\033[33m')
+    dividerLine()
+    sleep(0.5)
+    print('\033[36m')
+    print('it\'s never goodbye'.center(50))
+    print('\033[33m')
+    sleep(0.5)
+    dividerLine()

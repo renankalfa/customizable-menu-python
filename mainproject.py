@@ -13,7 +13,7 @@ while True:
         storeFile(user_options)
     elif option == 2:
         showDt(user_options)
-        nothing = input('Press enter to continue > ')
+        nothing = input('Press \033[31menter\033[m to continue > ')
     elif option == 3:
         goodbye_message(user_options[1])
         break

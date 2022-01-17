@@ -14,7 +14,7 @@ def name_menu():
 
 def styleOptions():
     styleShow_options()
-    option = readInt_number('Type your option style \033[36m>\033[m ')
+    option = readInt_inOptions('Type your option style \033[36m>\033[m ', 3)
     return option
 
 
