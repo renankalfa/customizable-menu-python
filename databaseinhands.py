@@ -5,7 +5,7 @@ import os
 
 def dt_create_with_name():
     formatText('creating database and name')
-    name = read_oneName('Database name: ', n=1)
+    name = read_oneName('Database name \033[36m>\033[m ', n=1)
     join = [name, '.txt']
     name_file = ''.join(join)
     try:
@@ -35,6 +35,8 @@ def nameOf_columns():
     dividerLine()
     return [name1, name2]
 
+
+nameOf_columns()
 
 def writeType_dt(*lis):
     c1 = 'undefined'

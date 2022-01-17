@@ -7,7 +7,7 @@ clearConsole()
 while True:
     showMenu_head(name_menu=user_options[0], n=user_options[1])
     showMenu_options(user_options)
-    option = readInt_inOptions('Your option > ', n=3)
+    option = readInt_inOptions('\033[33mYour option\033[m \033[36m>\033[m ', n=3)
     clearConsole()
     if option == 1:
         storeFile(user_options)

@@ -11,11 +11,10 @@ def name_menu():
     name = readName_withNumber('\033[36mName of your menu > \033[m', 2)
     return str(name)
 
-name_menu()
 
 def styleOptions():
     styleShow_options()
-    option = readInt_number('Type your option style > ')
+    option = readInt_number('Type your option style \033[36m>\033[m ')
     return option
 
 
