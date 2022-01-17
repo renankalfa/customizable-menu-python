@@ -21,7 +21,7 @@ Depois de terminar os cursos de Python 3 do [Curso em Vídeo](https://www.cursoe
 <img width="1584" alt="inspirações" src="https://user-images.githubusercontent.com/97196457/149821501-d563ebc1-8382-4af3-ab65-3115dfa1139f.png">
 
 Dois exercícios que eu fiz durante o curso foram os culpados por essa ideia. 
-- O primeiro (imagem da direita) era um exercício para gerar um cardápio, porém, decidi incrementar mais um pouco e acrescentar uma personalização do nome do bar e, particulamente, adorei ver e fazer isso.
+- O primeiro (imagem da direita) era um exercício para gerar um cardápio, porém, eu decidi incrementar mais um pouco e acrescentar uma personalização do nome do bar e, particulamente, adorei ver e fazer isso.
 - O segundo (imagem da esquerda) foi um exercício bem completo para a criação de um menu com uma base de dados em um arquivo de texto.
 A união da ideia da personalização e do menu com uma base de dados em um arquivo de texto, foram as geradoras desse meu projeto pessoal.
 
