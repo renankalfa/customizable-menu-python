@@ -15,6 +15,15 @@ def styleOptions():
 
 
 def columnsName_ofDf():
+    dividerLine()
+    name1 = '\033[46mfirst column\033[m'
+    name2 = '\033[43msecond columnn\033[m'
+    print(f'{name1:<30}{name2}')
+    dividerLine()
+    template = {'\033[36mRenan Barbosa\033[m': '\033[33m20\033[m', '\033[36m20\033[m': '\033[33m4\033[m',
+                '\033[36mBanana\033[m': '\033[33m2.99\033[m'}
+    for keys, values in template.items():
+        print(f'{keys:<30}{values}')
     columnShow_options()
     column1 = readInt_inOptions('What is the data type of the first column?'
                                 '\n> ', 3)

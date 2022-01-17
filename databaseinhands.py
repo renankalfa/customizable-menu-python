@@ -1,13 +1,5 @@
 from visualstratament import *
 from time import sleep
-import os
-
-
-def clearConsole():
-    command = 'clear'
-    if os.name in ('nt', 'dos'):
-        command = 'cls'
-    os.system(command)
 
 
 def dt_create_with_name():
@@ -42,8 +34,6 @@ def nameOf_columns():
     dividerLine()
     return [name1, name2]
 
-
-nameOf_columns()
 
 def writeType_dt(*lis):
     c1 = 'undefined'
