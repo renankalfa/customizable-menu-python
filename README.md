@@ -38,7 +38,7 @@ A união da ideia da personalização e do menu com uma base de dados em um arqu
 - **Git/Github**: quando optei pelo PyCharm, tive que aprender a como usar e como funcionava a integração dele com o Git. Depois de uma hora testando cada botão, entendendo cada funcionalidade, eu acabei achando bem prático até, ainda mais por tudo ser feito na própria IDE. Com o tempo, **entender as branches, commits, push, pull virou algo  fácil**.
 
 <div align="center">
-  <img height="200em" src="https://user-images.githubusercontent.com/97196457/149844037-e5e9b952-d78a-46f5-9804-fd0f794ccebc.png"/>
+  <img height="150em" src="https://user-images.githubusercontent.com/97196457/149844037-e5e9b952-d78a-46f5-9804-fd0f794ccebc.png"/>
 </div>
 
 - **Tipos primitivos**: quando eu ficava um tempo olhando o código, testando com uns prints e o type e não resolvia, eu "**apelava**" e recorria ao debug. Foi uma ferramenta que me salvou e me mostrou exatamente o que estava errado. Recomendo muito usá-la para entender melhor o que está acontecendo e, principalmente, o que está acontecendo de errado.
