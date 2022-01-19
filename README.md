@@ -55,3 +55,5 @@ A união da ideia da personalização e do menu com uma base de dados em um arqu
 
 - **Listas dentro de funções**: por conta da personalização, optei por trabalhar com listas. No início, eu ficava completamente perdido, até que criei comentários com as listas e os seus índices. E uma outra coisa que eu não contava, era que essa lista quando entrava numa função, ela ficava dentro de uma tupla, o que teria que acrescentar um \[0\] para enfim, poder escolher entre os elementos da lista.
 
+## Outras coisas legais
+...em construção...
