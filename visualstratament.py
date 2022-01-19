@@ -40,22 +40,6 @@ def formatText(phrase='frase formatada', n=0, show=True):
         return n
 
 
-def dynamicFormat(phrase='no phrase', n=0):
-    size = len(phrase) + 2
-    if n == 0:
-        print('=' * size)
-        print(f'{phrase.center(size).upper()}')
-        print('=' * size, end='')
-    elif n == 1:
-        print('~' * size)
-        print(f'{phrase.center(size).upper()}')
-        print('~' * size)
-    elif n == 2:
-        print('-' * size)
-        print(f'{phrase.center(size).upper()}')
-        print('-' * size)
-
-
 def dividerLine(n=0, t=50):
     if n == 0:
         print('=' * t)
