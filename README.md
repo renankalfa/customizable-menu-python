@@ -57,4 +57,4 @@ A união da ideia da personalização e do menu com uma base de dados em um arqu
 
 ## Ferramentas utilizadas
 - PyCharm (Python IDE);
-- Git/GitHub;
+- Git/GitHub.
