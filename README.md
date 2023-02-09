@@ -1,4 +1,4 @@
-# Menu personalizável pelo usuário em Python
+# Menu Personalizável Pelo Usuário em Python
 
 ## 🤳 Vídeo no youtube mostrando o projeto (8 minutos)
 
